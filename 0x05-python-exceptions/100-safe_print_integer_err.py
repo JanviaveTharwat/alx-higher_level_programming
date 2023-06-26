@@ -1,13 +1,12 @@
 #!/usr/bin/python3
 
-import sys
-
-
-def safe_print_integer_err(value):
-    try:
-        print("{:d}".format(value))
-        return (True)
-    except (TypeError, ValueError):
-        print("Exception: {}".format(sys.exc_info()[1]), file=sys.stderr)
-        return (False)
-
+def magic_calculation(a, b):
+    result = 0
+    for i in range(1, 3):
+        try:if i > a:
+            raise Exception('Too far')
+        result += a ** b / i
+        except Exception:
+            result = b + a
+            break
+        return result
