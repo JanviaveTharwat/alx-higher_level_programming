@@ -13,8 +13,8 @@ class Square:
             if not isinstance(value, int):
                 raise TypeError("size must be an integer")
             elif value < 0:
-                raise ValueError("size must be >= 0")
-            def area(self):
+
+             def area(self):
                 return (self.__size * self.__size)
 
             def my_print(self):
