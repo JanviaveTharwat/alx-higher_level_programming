@@ -3,9 +3,7 @@
 more class base
 """
 
-
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
-
 
 class Rectangle(BaseGeometry):
     """ definition of a Rectangle """
@@ -21,5 +19,7 @@ class Rectangle(BaseGeometry):
 
         def __str__(self):
             """ print """
-            return ("[Rectangle] " + str(self.__width) + "/" + str(self.__height))
+            return ("[Rectangle] " + str(self.__width) + "/" +
+                    str(self.__height))
+        
 
